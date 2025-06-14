@@ -1,0 +1,19 @@
+platform: android  # or 'ios'
+android:
+  app: src/apps/android/trustWallet.apk
+  platformName: android
+  deviceName: RavindraOnePlus11
+  automationName: UiAutomator2
+  serverUrl: http://127.0.0.1:4725/wd/hub
+  ignoreHiddenApiPolicyError: true
+  noReset: true
+
+ios:
+  app: src/apps/ios/iOSApp.app
+  platformName: iOS
+  deviceName: iPhone 14
+  automationName: XCUITest
+  platformVersion: 17.0
+  serverUrl: http://127.0.0.1:4723/wd/hub
+  ignoreHiddenApiPolicyError: true
+  noReset: true

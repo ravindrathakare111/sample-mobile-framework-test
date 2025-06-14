@@ -7,11 +7,4 @@ import utils.DriverUtils;
 
 public class BasePage {
 
-    protected AppiumDriver driver;
-
-    public BasePage() {
-        this.driver = DriverUtils.getDriver();
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-    }
-
 }
